@@ -16,6 +16,10 @@
 		25D4199A298DF5F6000D6823 /* EvWatcherAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D41999298DF5F6000D6823 /* EvWatcherAppTests.swift */; };
 		25D419A4298DF5F6000D6823 /* EvWatcherAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D419A3298DF5F6000D6823 /* EvWatcherAppUITests.swift */; };
 		25D419A6298DF5F6000D6823 /* EvWatcherAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D419A5298DF5F6000D6823 /* EvWatcherAppUITestsLaunchTests.swift */; };
+		25D419B4298E4434000D6823 /* Charger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D419B3298E4434000D6823 /* Charger.swift */; };
+		25D419B7298E44E4000D6823 /* ChargerDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D419B6298E44E4000D6823 /* ChargerDataSource.swift */; };
+		25D419B9298E478F000D6823 /* ChargersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D419B8298E478F000D6823 /* ChargersViewController.swift */; };
+		25D419BC298E48F1000D6823 /* ChargerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D419BB298E48F1000D6823 /* ChargerCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,10 @@
 		25D4199F298DF5F6000D6823 /* EvWatcherAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EvWatcherAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		25D419A3298DF5F6000D6823 /* EvWatcherAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EvWatcherAppUITests.swift; sourceTree = "<group>"; };
 		25D419A5298DF5F6000D6823 /* EvWatcherAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EvWatcherAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		25D419B3298E4434000D6823 /* Charger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Charger.swift; sourceTree = "<group>"; };
+		25D419B6298E44E4000D6823 /* ChargerDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChargerDataSource.swift; sourceTree = "<group>"; };
+		25D419B8298E478F000D6823 /* ChargersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChargersViewController.swift; sourceTree = "<group>"; };
+		25D419BB298E48F1000D6823 /* ChargerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChargerCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +107,9 @@
 		25D41981298DF5F5000D6823 /* EvWatcherApp */ = {
 			isa = PBXGroup;
 			children = (
+				25D419BA298E48D8000D6823 /* Views */,
+				25D419B5298E44C5000D6823 /* Data Sources */,
+				25D419B2298E43FC000D6823 /* Models */,
 				25D41982298DF5F5000D6823 /* AppDelegate.swift */,
 				25D41984298DF5F5000D6823 /* SceneDelegate.swift */,
 				25D41986298DF5F5000D6823 /* ViewController.swift */,
@@ -106,6 +117,7 @@
 				25D4198B298DF5F6000D6823 /* Assets.xcassets */,
 				25D4198D298DF5F6000D6823 /* LaunchScreen.storyboard */,
 				25D41990298DF5F6000D6823 /* Info.plist */,
+				25D419B8298E478F000D6823 /* ChargersViewController.swift */,
 			);
 			path = EvWatcherApp;
 			sourceTree = "<group>";
@@ -125,6 +137,30 @@
 				25D419A5298DF5F6000D6823 /* EvWatcherAppUITestsLaunchTests.swift */,
 			);
 			path = EvWatcherAppUITests;
+			sourceTree = "<group>";
+		};
+		25D419B2298E43FC000D6823 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				25D419B3298E4434000D6823 /* Charger.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		25D419B5298E44C5000D6823 /* Data Sources */ = {
+			isa = PBXGroup;
+			children = (
+				25D419B6298E44E4000D6823 /* ChargerDataSource.swift */,
+			);
+			path = "Data Sources";
+			sourceTree = "<group>";
+		};
+		25D419BA298E48D8000D6823 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				25D419BB298E48F1000D6823 /* ChargerCell.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,8 +294,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				25D419B4298E4434000D6823 /* Charger.swift in Sources */,
 				25D41987298DF5F5000D6823 /* ViewController.swift in Sources */,
+				25D419BC298E48F1000D6823 /* ChargerCell.swift in Sources */,
 				25D41983298DF5F5000D6823 /* AppDelegate.swift in Sources */,
+				25D419B9298E478F000D6823 /* ChargersViewController.swift in Sources */,
+				25D419B7298E44E4000D6823 /* ChargerDataSource.swift in Sources */,
 				25D41985298DF5F5000D6823 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
