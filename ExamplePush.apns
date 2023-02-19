@@ -1,0 +1,14 @@
+{
+    "Simulator Target Bundle": "sst.EvWatcherApp",
+    "aps": {
+        "alert": {
+            "title": "Push Notification",
+            "subtitle": "Test Push Notifications",
+            "body" : "Testing Push Notifications on iOS Simulator",
+        }
+    },
+    "CHARGER_ID" : "1",
+    "CHARGER_ADDRESS" : "전라북도 군산시 장미동 1-67",
+    "CHARGER_STATUS" : "일반차량",
+    "CHARGER_DURATION" : 5678
+}

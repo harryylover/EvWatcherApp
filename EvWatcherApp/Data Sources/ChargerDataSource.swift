@@ -8,6 +8,10 @@
 import UIKit
 
 class ChargerDataSource {
+    static let shared = ChargerDataSource()
+    
+    var tableView: UITableView?
+    
     var chargers: [Charger]
     
     static func loadChargersData() -> [Charger] {
@@ -20,12 +24,27 @@ class ChargerDataSource {
         ]
     }
     
-    init() {
+    private init() {
         chargers = ChargerDataSource.loadChargersData()
     }
     
     func numberOfChargers() -> Int {
         chargers.count
+    }
+    
+    func upsertCharger(charger:Charger) {
+        // check if exist
+        var t = chargers.first{ c in c.chargerId == charger.chargerId }
+        if (t != nil) {
+            t!.status = charger.status
+            // TODO: image도 업데이트 되야 함.
+        }
+        else {
+            chargers.append(charger);
+        }
+        self.tableView?.reloadData()
+        
+        print(chargers)
     }
     
     func append(charger:Charger, to tableView: UITableView) {

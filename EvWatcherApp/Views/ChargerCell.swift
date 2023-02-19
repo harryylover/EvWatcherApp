@@ -20,6 +20,25 @@ class ChargerCell: UITableViewCell {
             
             nameLabel.text = charger.chargerId
             statusLabel.text = charger.status! + "(" + charger.duration!.formatted() + ")"
+            switch charger.status {
+            case "충전중" :
+                statusLabel.textColor = UIColor.green
+                break
+            case "미사용" :
+                statusLabel.textColor = UIColor.blue
+                break
+            case "일반차량" :
+                statusLabel.textColor = UIColor.red
+                break
+            case "미충전" :
+                statusLabel.textColor = UIColor.red
+                break
+            case "정차시간오버" :
+                statusLabel.textColor = UIColor.red
+                break
+            default :
+                statusLabel.textColor = UIColor.gray
+            }
             if (charger.current_image != nil) {
                 currentImageView.image = UIImage(named: charger.current_image!)
             }

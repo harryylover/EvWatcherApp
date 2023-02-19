@@ -8,14 +8,14 @@
 import UIKit
 
 class ChargersViewController: UITableViewController {
-    var chargersDataSource = ChargerDataSource()
-  
+    var chargersDataSource = ChargerDataSource.shared
 }
 
 // MARK: - UITableViewDataSource
 extension ChargersViewController {
     override func viewDidLoad() {
         self.navigationItem.title = "근대역사박물관(군산시 장미동 1-67) - kp002562"
+        self.chargersDataSource.tableView = self.tableView
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
